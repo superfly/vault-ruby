@@ -126,6 +126,14 @@ module Vault
           @nhp.key = OpenSSL::PKey::RSA.new(pem, ssl_pem_passphrase)
         end
 
+        if ssl_cert
+          @nhp.cert = ssl_cert
+        end
+
+        if ssl_key
+          @nhp.key = ssl_key
+        end
+
         # Use custom CA cert for verification
         if ssl_ca_cert
           @nhp.ca_file = ssl_ca_cert

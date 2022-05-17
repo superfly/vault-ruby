@@ -20,6 +20,8 @@ module Vault
         :ssl_pem_contents,
         :ssl_pem_file,
         :ssl_pem_passphrase,
+        :ssl_cert,
+        :ssl_key,
         :ssl_ca_cert,
         :ssl_ca_path,
         :ssl_cert_store,

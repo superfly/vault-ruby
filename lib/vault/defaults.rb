@@ -166,6 +166,12 @@ module Vault
         ENV["VAULT_SSL_CERT_PASSPHRASE"]
       end
 
+      def ssl_cert
+      end
+
+      def ssl_key
+      end
+
       # The path to the CA cert on disk to use for certificate verification
       # @return [String, nil]
       def ssl_ca_cert
